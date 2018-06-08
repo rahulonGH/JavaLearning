@@ -1,0 +1,56 @@
+OOP
+====
+its an approach of programming where we emphasize more on data rather than code.
+it is capable of overcoming the complexity of Proceural approch of programming.
+
+Abstraction
+=============
+it is an essential elemnt of OOP which enable us to handl the complexity of real world.
+we can ignore the details of an object , so that we can focus on necessary data.
+
+Encapsulation
+===================
+it is mechanism to bind together the DATA+COde.
+we can cotroll the access ovr data using encapsulation.
+
+a class is a basic of unit of encapsulation.
+
+Polymorphism
+==============
+POLY + Forms
+it allows one method to be used for a common class of actions.
+to achive polymorphism Method overloading and method Overriding is used.
+
+Inheritance
+=============
+with inheritance we can create hierachy of classes to share the properties.
+it is concept of Reusability.
+ Inherited class ==  superclass
+ Inheriting classs == subclass
+ 
+using inheritance we can create general class that defines common set of properties, and that class can be further inherited.
+'extends' keyword is used to inherit from superclass
+
+No class can be a super class of itself.
+We can only specify one superclass for any subclass that we create.
+java doesn't support the inheritance of multiple classes into a single class.i.e Multiple inheritance is not supported in java.
+
+private class member will remain private to its class, it can't be accessed using any code outside its class, including subclass.
+
+Constructors
+==============
+Similar to the method , but having same name as class. And it can't return any value. not even void.
+it is used to initialize the object.
+
+default constructor/No argument
+parameterized constructor
+
+Why constructors not return any value?
+ Because, the implicit return type of a class constructor is the CLASS TYPE itself.
+ 
+ 
+
+
+
+ 
+ 
