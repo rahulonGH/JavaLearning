@@ -1,0 +1,40 @@
+Control flow describes the flow of program execution
+
+public static void main(String stya[]){
+	
+}
+compiler will look for the main method first of all
+main is the method name which defines the starting point of execution
+public is modifier that makes this method publicly availble
+void defines that main method should not return anything
+static refers that the member will be common or shared to its class. this will have a single copy.
+String arg[] is the string array passe as argumrnt to main method.
+
+why arguments need to be passed to main method?
+whenever any value is required by main method we can pass as String[] arguemnt
+
+javac InheritanceExample.java
+java InheritanceExample 
+
+Arrays are the collection of similar datatypes
+
+int arr[] = {1,121,7};
+String stya[] = {"R","S"}; 
+
+
+// hgjgh
+
+/* 
+ * 
+ * djjknd 
+ * dfbdb
+ * dhb
+ * 
+ * */
+
+/**
+ * 
+ * @author Rahul
+ * date: 9 june 18
+ *
+ */
