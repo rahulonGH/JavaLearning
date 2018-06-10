@@ -1,0 +1,80 @@
+1. Whitespaces
+===============
+public void
+(a + b)
+java is free-form language..it means no Special indetion is required.
+
+2. Identifiers
+===============
+words to declare a class/method/variable
+
+identifiers can be of uppercase, lowercase, toggleCase,underscores, $, numeric
+it should start with numbers
+java CASE SENSITIVE... student != Student
+
+3. Comments
+=============
+//single line coments
+/*
+multiline comments
+*/
+
+/**
+*Documents comment
+*
+*/
+
+4.Separators
+==============
+[] , {} , comma, ;, .
+
+5. Java keyword
+================
+50 keywords
+2 reserved words (const,goto) but not used
+3 literals not keywords (true,false,null)
+
+
+Naming Convention
+==================
+1. class names can be any NOUN starting with Uppercase letter. eg. Student
+2. variable and package names should with lowercase letter eg. git
+3. method names  can be any verb starting with lowercase letter eg. show, get, display
+4. interface any Adjective staring with Uppercase eg. Runnable
+
+Escape sequence
+==================
+tab,new line, " , ', octal or hexadecimal [\t,\n,\b,\",\`,\ddd,\uxxxx]
+
+Java Type Conversion
+=======================
+for automatic type conversion
+
+the two types should be compatible AND
+the destination type should be larger than the source type
+
+int a = byte b;   possible because (int>byte)
+
+
+ARRAY
+=======
+group of similar type of variables; refered by a common variable name/identifier
+
+1-Dimensional array
+====================
+type vaiablename[] = new type[size];
+
+int rahul[] = new int[20]; // it will create integer typed array of 2 element capacity and will be referred by the name rahul.
+
+2-D/Multidimensional Array
+type vaiablename[][] = new type[rowSize][colSize];
+
+int satya[][] = new int[2][3]; //it will create integer typed array of 2 rows and 3 columns an will be referred by the identifier satya
+
+Array accessing can be done on the basis of index value.
+index starts with 0.
+
+
+
+
+ 
