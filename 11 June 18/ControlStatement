@@ -1,0 +1,74 @@
+control statements are used to handle the flow of execution.
+
+java has provided few control statements
+
+conditional control flow
+=========================
+if(condtion){
+
+statements...
+
+}
+
+
+
+if(condition){
+	statemnt
+}
+else{
+ statemnt
+} 
+
+
+
+if(condition){
+	statemnt
+}
+else if(condition){
+	statement
+}
+else{
+ statemnt
+} 
+
+
+if(condition){
+
+  if(condition){
+  
+  }
+}  
+
+
+switch(expression){
+
+	case value1: statement; break;
+	case value2: etatement; break;
+	..
+	..
+	case valueN: statement; break;
+	default: statement;
+}
+
+
+break terminates the current flow of execution.
+continue skips the current flow of execution.
+
+
+LOOPS are used to execute similar code block multiple times.
+
+for(inital condition; control condition; increment/decrement)
+{
+		statement...
+		satement....
+}
+
+while(condition){  // if number of iteration not fixed 
+
+}
+
+do{  //if number of iteration not fixed and we must want to execute the statements atleast once.
+
+
+}while(condition);
+
