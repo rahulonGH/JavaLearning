@@ -1,0 +1,68 @@
+Constructor Chaning
+=======================
+class A{
+
+ A(){
+ 
+ }
+ 
+ A(int x){
+  this();   ///constructor chaining i.e calling default constructor from parameterized constructor or vice versa ... this() should be the first line of constructor
+  System.out.println("HI");
+ }
+ }
+ 
+ class test{
+ public static void main(String ar[]){
+ 	A a = new A();
+ }
+ }
+ 
+ we can pass this as method argument
+ 
+ 
+ 
+ Static
+ =======
+ static keyword is meant for memory mhgmt.
+ it can be used with 
+  . variable
+  . method
+  . block
+  . nested class
+  
+  static int var;
+  
+ to identify or to refer the common property of all objects which is not unique for all object.
+ static things gets the memory only once in the class area while class loading itself.
+ java static property is shared to all objects.
+ 
+ note: object is not required to access static property
+ 
+ public static void main (String a[])
+ why static?
+  because object is not required to call static methods, if it was non-static, JVM needs to create object first then call main(),
+  and that will lead to problem of extra memory allocation.
+  
+ static methods belongs to class rather than object
+ without creating object of a class we can call static methods.
+ static method can access static data member and they can change the value.
+ 
+
+ static method cn't use non-static data member or call non-static methods directly.
+ this and super can't be used in static context
+ 
+ static block
+ =============
+ static{
+ 
+ ...
+ ..
+ }
+ 
+ it is used to initialize static data member.
+ it executes before the main method at the time of class loading.
+ 
+ NOTE: Using static block, we can execute a java program without main() in older version of java before java 1.7 .
+ 
+ 
