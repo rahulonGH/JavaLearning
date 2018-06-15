@@ -1,0 +1,44 @@
+Super keyword
+================
+whenever a subclass needs to refer t its IMMEDIATE superclass, it can be done using super keyword
+ 2 ways of implementation
+ =========================
+  a. calling a superclass constructor
+  b. accessing data members of superclass that has been hidden by a member of subclass
+  
+a. calling a superclass constructor
+===============================
+  super();
+   super must be the first statement executed inside a subclass constructor
+   
+ super can be called in any form defined by superclass i.e constructor overloading
+ 
+ 
+ b. accessing data members of superclass that has been hidden by a member of subclass
+ ============================================================================================
+ super is somehow similar to this except that it always refers to immediate superclass of the subclass in which it is invoked.
+ 	super.id;
+ 	super.get();
+ 
+ whenever we have explicitly provided parameterized constructor JVM will not be able to call default constructor of that class implicitly.
+ in that case if we are extending that class we need to provide default constructor explicitly in the superclass, so that it will fulfill the need of 
+ hierarchy of constructor calling.
+ 
+ 	
+ Hierarchy of Constructor Calling
+ ==================================
+ Constructors are called in order of derivation.
+  constructor of A12 class will be called first followed by B12 ad C12.
+  
+ Why constructors are getting called in order of derivation?
+ 
+  because superclass has no knowledge of its subclass. whenever we create an object of a class ,
+  the default constructor of that class will be invoked, to instantiate the members of class. in the case of inheritance--
+   to get the properties of superclass by subclass, superclass members must have been instantiated. 
+   
+   A <---- B
+   2       1+2 
+   
+   constructor of base class is called first to instantiate all the inherited members.
+ 
+ 
