@@ -1,0 +1,39 @@
+Method Overriding [in a class hierarchy]
+==================
+when a method in subclass has the 
+	same name and 
+	type signature 
+as a method in superclass; then the method in subclass will be said to override the method in superclass.
+
+Upcasting - assigning subclass reference to superclass reference  [superclass objectRef = new subclass();]
+	A object1 = new A();
+	B object2 = new B();
+	Object1.m1(); /// AA
+	Object2.m1(); /// BB   …. But the version of m1 method of superclass is hidden
+	A Ref;
+	Ref=object2; 	//upcasting
+	Ref.m1();
+	
+Method overriding forms the basis for one of the most powerful concept of JAVA i.e Runtime Polymorphism or Dynamic Method Dispatch
+ A call to an overridden method is resolved at runtime rather than compile time.
+ when an overridden method  is called  from superclass reference, Java determines which version (superclass/subclass) of that method 
+ to be executed, upon the type of object being referred at the time of calling.
+ 
+Depending upon the type of object being referred to (NOT the type of the reference variable), 
+that determines which version of an overridden method to be called.
+
+NOTE: in JAVA we can override methods only, not variables.
+
+
+final keyword
+==============
+3 uses basically
+
+ a. To declare named constants.
+ b. To prevent Overriding  [if a method is declared final, it will not be overridden]
+ c. To prevent Inheritance itself [if a class is declared as final, it can't be extended]
+ 
+usually java resolves the calls to methods dynamically, this is called as Late Binding, however since final can't be overridden,
+a call to final methods can be resolved at compile time, called as Early Binding.
+
+for final class all its methods will be final 
