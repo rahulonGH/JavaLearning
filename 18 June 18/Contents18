@@ -1,0 +1,70 @@
+IS-A relationship [Association]
+
+Cat is an Animal
+Dog is an animal
+
+HAS-A relationship [Aggregation]
+
+Employee(c) has an Address(c) but not extending the properties but using the complete class as a property.
+
+cat is a subclass of animal [is-a]
+
+class Animal{
+
+}
+
+class Dog extends Animal{
+}
+
+class Employee{
+ ind id;
+ Address addr;
+ 
+} 
+class Address{
+}
+
+TAKING USER INPUT in JAVA PROGRAMS
+1. Scanner class 
+2. BufferedReader class [more efficient because the input is buffered]
+3. Console class [preferred for taking password type texts input....it is not supported by IDEs]
+
+
+
+ABSTRACT CLASS [not 100% abstraction]
+===============
+whenever partial implementation is known to us, we can use Abstract classes
+or
+whenever a superclass is unable to created a meaningful implementation for a method, use abstract class.
+
+any class that contain one or more abstract method must also be declared as abstract.
+Abstract class can not have Objects i.e class can't be instantiated using new keyword.
+
+Object reference of abstract classes can be created,because runtime-polymorphism can only be 
+implemented through superclasss reference, thus it is must be possible to create object reference of an abstract classs.  
+
+Also we can't declare abstract constructors or abstract static methods.
+
+Any subclass of an abstract class must either implement all of the abstract methods or be itself as an abstract.
+As abstract classses are alowing concrete methods also, it can't provide 100% abstraction.
+
+
+class name{
+  void m1(){
+ 		sys,....
+  }
+}
+
+abstract class Student{
+  int c;
+  abstract void m1();   /// no method body; i.e. just a placeholder/declaration 
+  void m2(){ //concrete method
+  	Syso....
+  }
+}
+abstract class B extends Student{
+	
+}
+
+
+
