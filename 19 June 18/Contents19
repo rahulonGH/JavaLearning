@@ -1,0 +1,40 @@
+Packages
+==========
+if we are using same namespace for all classes, we may face situation of class name conflict.
+
+this is providing both naming and visibility control mechanism
+
+We can define classes inside a package that are not accessible by code outside that package.
+We can also define class members that are only exposed to other members of the same package.
+
+this is allowing our classes to have intimate knowledge of each other, but not exposed.
+
+define a package
+
+package pkg1;
+or
+package pkg.pkg1;  ///a simple file system directory 
+
+Access Protection [mentioned in Content19]
+==================
+
+
+Interface
+===========
+are moreover over similar to classes , except the class definition and some default visibilities to its members.
+methods inside interfaces doesn't contain body.
+way of achieving 100% abstraction in java, because it doesn't contain concrete methods.
+it also providing multiple inheritance.
+
+interfaces are implemented not extended.
+implementing classes must provide the implementation of all the methods present in interface.
+
+using interface we can specify what the implementing class has to do, but not how it does it.
+
+syntax
+=======
+interface InterfaceName{
+   ////members
+}
+
+
