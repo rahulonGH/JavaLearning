@@ -1,0 +1,24 @@
+class --->extends --->class
+class --->implement --->inteface
+but
+interface---->only extends--->interfce
+
+Marker interface
+=================
+
+which has no members eg. Serializable
+
+Nested Interface / Member interface
+=================
+an interface can be declared as a member of class or another interface
+nested interface can be public, protected and private
+
+outside of class or interface , in which a nested interface is declared; its name must be fully qualified 
+i.e classname/interfacename.NestedInterfcaeName
+
+nested interfaces are static implicitly.
+
+
+
+
+
