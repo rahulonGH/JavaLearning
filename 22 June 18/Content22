@@ -1,0 +1,21 @@
+throw
+=========
+to throw exceptions explicitly
+ syntax:    throw ThrowableInstance;
+      the Throwable instance must be an Object of type Throwable or its subclass
+      
+ how to create own exception subclass
+ 
+ just extend Exception class
+ 
+ Exception class doesn't have its own methods, but it inherits all the methods of Throwable class.
+ eg: String toString() , void printStackTrace() , String getMessage()
+ 
+ 5 form of constructors defined in Exception class
+  Exception()
+  Exception(String message)
+  Exception(Throwable cause)
+  Exception(String message, Throwable cause)
+  Exception(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace)
+ 
+ 
