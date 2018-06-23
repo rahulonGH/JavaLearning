@@ -1,0 +1,68 @@
+The Object Class
+=================
+
+Special class defined by java, which is the super class of all other java classes
+
+the reference of type Object can refer to object of any class type.
+
+eg.     Object obj;
+		obj = new RuntimeException();
+		obj = new String();
+		obj = new Exception();
+		
+Also since java arrays are implemented as classes , a variable of type object can also refer to an array.
+
+Methods of Object class
+========================
+
+
+final,finallly{} and finalize()
+
+the toString() returns a String that cotains the description of Object on which it is called.
+Also this method is automatically called when an object is Output using print/println();
+
+
+String Class [in other languages string is sequence of character]
+==============
+java implements strings as an Object of type String.
+
+unexpectedly, String is immutable Object java. i.e once a String object is created, 
+we can't change the characters that comprises that string.
+
+however we can perform all String operations., the difference is that each time whenever we modify the data of an existing string,
+a new String object is created that contains the modified data.
+
+immutable string are more efficient than the chagable one.
+java is using String Literal Concept.
+
+
+String Class Constructors
+============================
+Sring()
+String(byte[] b)
+String(char[] c)
+String(String str)
+String(byte[] b,String str)
+
+String(StringBuffer sb)
+String(StringBuilder sb)
+
+big list of String class methods
+================================
+int length()
+char charAt(int index)
+
+
+StringBuffer Class
+===================
+mutable, growable and writable character sequence
+
+StringBuffer()  --- default constructor is creating 16 character space
+StringBuffer(int space)
+StringBuffer(String str)
+StringBuffer(CharSequence ch)
+
+StringBuilder class [JAVA 5 onwards]
+=====================================
+Same as StringBuffer except, it is not Synchronized i.e it is not thread safe.
+but it is faster.
