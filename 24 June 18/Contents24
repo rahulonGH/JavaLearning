@@ -1,0 +1,12 @@
+MultiThreading
+=====================
+ Multitasking
+  can be achieved using 2 mechanisms:
+    i. Multiprocessing 
+    ii. MultiThreading ** lightwieght, less CPU cycle required to switch between threads, Faster
+    
+Single thread environment ... whenever a thread is blocked due to any reasons like resource not availble....
+the entire program will wait.
+
+every thread has its own execution path, hence they are independent from each other.
+
