@@ -1,0 +1,34 @@
+MultiThreading
+=====================
+ Multitasking
+  can be achieved using 2 mechanisms:
+    i. Multiprocessing 
+    ii. MultiThreading ** lightwieght, less CPU cycle required to switch between threads, Faster
+    
+Single thread environment ... whenever a thread is blocked due to any reasons like resource not availble....
+the entire program will wait.
+
+every thread has its own execution path, hence they are independent from each other.
+
+
+States of a Thread
+1.	New/Ready: this depict a thread instance is just created.
+2.	Runnable: after start() called, thread will be treated as runnable
+3.	Non-Runnable/Blocked: thread is alive but waiting or sleeping
+4.	Terminated:  thread has completed the execution and it is not alive.
+
+Thread Priority
+It is used to decide when to switch from one thread to another [called as Context Switch].
+Multithreading is introducing Asynchronous behaviour to our program, there must be a way to enforce synchronicity, as per need. Synchronization is also built-in in java.
+
+The main thread
+When a java program starts, main thread starts running immediately.
+It can be controlled using Thread Object, using currentThread() method.
+How can we create a Thread in JAVA
+a.	Extend Thread class
+b.	Implement Runnable interface
+Thread class and Runnable interface methods
+getName() 	join()	getPriority()		isAlive()	sleep()	   run()	      start()
+
+	public void run() {….}
+
