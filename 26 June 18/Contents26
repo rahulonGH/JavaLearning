@@ -1,0 +1,5 @@
+we can't start a thread twice, it will throw IllegalStateException;
+because a thread can't go bock to NEW/READY state after starting it once.
+
+can we call run() directly?
+YES... but it will be treated as normal method call, as context switching will not happen.
