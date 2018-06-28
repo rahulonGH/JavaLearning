@@ -1,0 +1,26 @@
+Synchronization
+=============================================================
+when one or more threads need access to a shared resource , 
+they need some mechanism that ensures the resource will be used by only one thread at a time.
+
+Event looping and Polling mechanism [ in single thread based application events where stored in a loop and get chosen by polling mechanism that is based on some condition]
+
+Multithreading provides monitor concept. monitor is kind of lock on some resource.
+
+Synchronization provides Mutually Exclusive Lock.
+
+two ways to implement synchronization
+=======================================
+1. synchronized keyword
+2. synchronized(Object){....} block
+
+why synchronization not join()  ??
+=====================================
+main			worker
+
+javadoc/// synchronization is a way to "prevent thread interference and memory consistency errors".
+because of synchronization threads do not step on each other.
+
+synchronized keyword can only be used with methods.
+
+
