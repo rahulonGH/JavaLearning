@@ -1,0 +1,34 @@
+inter-thread communication
+===========================
+
+wait()  -> tells the calling thread to give up the lock and go to sleep, until some other thread acquires the same lock and calls notify()
+
+notify() -> wakes up a thread that called wait() on same object.
+
+notifyAll() -> wakes up all threads called wait() on same object. [one of the thread will be granted access based on thread priority or random]
+
+can be called from synchronized context.
+
+Sun recommends that calls to wait() should take place within a loop that checks the condition on which thread is waiting.
+
+Deadlock
+
+    T1
+    
+T2		T3
+
+T1 holds Resource1 and needs Resource2
+T2 holds Resource2 and needs Resource3 
+T3 holds Resource3 and needs Resource1
+
+
+
+Wait 									vs 				Sleep
+==========================================================================================================
+. called from synchronized context						. called from any context
+. lock is released 										. lock is intact
+. not a static method									. static method
+. wait() is generally used with a 						. not necessary to check
+  condition check
+ .get awake when notify() or 							. doesn't awake on notify() or notifyAll()
+  notifyAll() is called
