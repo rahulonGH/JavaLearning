@@ -1,0 +1,18 @@
+final void suspend()
+final void resume()
+final void stop()
+
+these methods were deprecated by JAVA 2
+ 
+modern way of using suspend and resume,, is wait and notify, alongwith some condition check.
+
+
+multi-threading is moreover "to think concurrently rather than serially".
+
+if we have 2 subsystems within a programm that can execute parallelly/concurrently, make them individual threads.
+
+if we r creating too many threads, we r actually degrading the performance rather than enhancing. we should always remember,
+some overhead will be associated with Context Switching.
+
+more the context switching ===== more CPU Utilization.
+
