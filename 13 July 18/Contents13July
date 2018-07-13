@@ -1,0 +1,41 @@
+Wrapper class
+=============
+if we need to store a primitive data type in a collection, wrapper classes will help.
+a wrapper class is a class whose object contains a primitive data type values. 
+
+we will get primitive data type as object.
+
+All the primitive data types has its corresponding Wrapper class
+
+char   -->  Character
+byte   -->  Byte
+int    -->  Integer
+short  -->  Short
+float  -->  Float
+double -->  Double
+long   -->  Long
+boolean ->  Boolean
+
+Autoboxing and Unboxing
+=======================
+Autoboxing == automatic conversion of primitive data type to their corresponding Wrapper class object.
+Unboxing  == automatic conversion of Wrapper class object into their corresponding primitive data types.
+
+		int x = 10; //primitive type
+		Integer i = x; // Autoboxing
+		System.out.println(i);
+		int y = i; //Unboxing
+		System.out.println(y);
+		
+
+Collection Framework
+======================
+it is a hierarchy of classes and interfaces that provides a mechanism for managing group of objects.
+
+Advantages
+==========
+1. High Performance
+2. Extending/Adapting is easy
+3. interoperability [different type of collections can work in similar fashion]
+
+Algorithms operates on collections are defined as static methods within the Collections class; thus they are available for all collections.
