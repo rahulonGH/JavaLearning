@@ -1,0 +1,63 @@
+the most basic way of storing thousands of records is variables.
+Arrays overcome this situation.
+
+Employee[] emp = new Employee[1000];
+emp[0] = new Employee("RAHUL");
+
+Object[] obj = new Object[1000];
+obj[0] = new Employee();
+obj[1] = new Student();
+
+but arrays also have some limitations:
+ 1) Fixed in size.
+ 2) Homogeneous group of data
+ 3) No underlying/standard data structure; No readymade method support.
+ 
+ to overcome these limitations we can use Collection
+  1) Growable /Shrinkable 
+  2) Heterogeneous/Homogeneous 
+  3) every collection class is based on some standard data structure; hence readymade method support present.
+  
+  if it is a collection, size will grow and the data will be saved at emp[1001] = new Employee();
+  
+  it will create another collection of required size and copy the existing content of old collection into this new collection and
+  the reference of old collection will be transferred to the new grown collection then the old collection will be GARBAGE COLLECTED.
+  
+  which is reducing the performance.
+  
+  Performance wise ARRAYS are GOOD choice
+  Memory wise Collections are GOOD choice
+  
+  Collections can hold objects only , not primitive type.
+  
+  ---------------
+  - stud1 stud2 -
+  - stud3 stud4 -
+  - stud5 ...   -
+  - stud1000    -
+  ---------------
+  
+  if we want to represent group of individual objects as a single entity; go for Collection.
+   to do this task, several classes and interfaces are required, which is provided as an API in java called as Collection Framework.
+   
+Collection Framework
+======================
+it is a hierarchy of classes and interfaces that provides a mechanism for managing group of objects as a single entity.
+
+Advantages
+==========
+1. High Performance
+2. Extending/Adapting is easy
+3. interoperability [different type of collections can work in similar fashion]
+
+Algorithms operates on collections are defined as static methods within the Collections class; thus they are available for all collections.
+   
+
+JAVA			-		C++
+=================================
+Collection		-		Container
+Collection Framework -  STL [Standard Template Library]
+
+
+  
+  
