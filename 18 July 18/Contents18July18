@@ -1,0 +1,42 @@
+Generics
+=========
+generics are the facility of generic programming.
+
+A type or a method--- to operate on objects of various types,while providing compile type safety.
+
+a class type that can refer to any class type is known as Generic class.
+
+	class ClassGenerics<T>{
+	  T obj;
+	  void add(T obj){
+	  this.obj = obj);
+	  }
+	  void get(){
+	   return obj;
+	  }
+	}
+	
+Type Parameters for Generics
+----------------------------
+T - type
+E - element
+K - Key
+V - Value
+N - number
+
+Generic methods
+-----------------
+-->it can accept any type of arguments
+
+
+
+List - ordered and allow duplicates
+Set - ordered but not allow duplicates
+Queue - if we need a collection(group of individual objects as a single entity) prior to processing  ..
+		Queue supports FIFO methodology usually, but the priority can be changed based on some compartor.
+		
+# there are two ways to iterate collection element:
+ 		for each loop and Iterator and its methods
+
+
+	   
