@@ -1,0 +1,31 @@
+interface Collection<E> extends Iterable<E>{ }
+interface List<E> extends Collection<E>{ }
+interface Queue<E> extends Collection<E>{ }
+interface Set<E> extends Collection<E>{ }
+
+inteface Map<K,V>{ }
+
+ArrayList
+==========
+its an implementation class of List interface
+- its ordered
+- can have duplicate elements
+- allows random access
+- non-synchronized [not thread safe]
+
+
+write a program to list out all rainbow colours.
+
+ArrayList<String> alist = new ArrayList<String>(7);
+alist.add("Violet");
+..
+
+alist.add("Red");
+
+Iterator it = alist.iterator();
+while(it.hasNext()){
+	System.out.println(it.next());
+}
+
+LinkedList are implemented on Doubly Linked List data structure
+
