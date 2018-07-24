@@ -1,0 +1,22 @@
+in java Linked List are implemented ad Doubly Linked List
+
+ordered
+allow duplicate
+non-synchronized
+it is faster in adding & removing elements but slower in getting.
+
+
+Cursors in Collection
+========================
+Enumeration [I]
+Iterator [I]
+ListIterator [I]
+
+Utility Classes
+================
+Collections
+Arrays
+
+
+Vector is almost same as ArrayList except it is Synchronized.
+it grows 50% of its initial size , whenever required. 
