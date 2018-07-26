@@ -1,0 +1,54 @@
+Set
+====
+unique elements with insertion order
+Set is modeled on mathematical set abstraction.
+
+it contains only the methods inherited from Collection interface and adding restrictions that duplicate elements can be prohibited.
+
+Implemntation classes
+======================
+HashSet
+LinkedHashSet
+TreeSet
+
+
+SortedSet[I]
+NavigableSet[I]
+
+Set {1,8,9,5,6,7}
+HashSet
+
+Searching Techniques
+----------------------
+Linear Search
+Binary Search
+Hashing
+
+Hashing
+
+keys	HashTable[10] [][1][][][][5][6][7][8][9] [h(x) = x]
+1
+8
+9
+5
+6
+7
+
+h(x) = x % size [1][][8][][][][][][][]
+if Collision of index occurs for elements:
+ chaining- making a linkedList of collided elements
+ Linear Probing - putting the collided element in next empty index of hashtable
+ 					h(x) = [h(x)+f(i)]% Size    {f(i) = index  i.e 0,1,2}
+ Qudratic Probing - h(x) = [h(x)+f(i^2)]% Size    {f(i) = index  i.e 0,1,2}			
+ 	
+ Hashing is a technique searching by indexing the Keys to the index of HashTable
+ HashTable is a normal array implentation to hold the elemnts
+ HashCode is the returned integer value of any hashing funtion.
+ 
+ tree
+ 		A
+ 	B			C
+ D		E	F		G		
+ 
+ TreeSet doesn't allow null element because it uses compareTo() method to compare elements of tree nodes.	
+ 					
