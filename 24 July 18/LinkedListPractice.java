@@ -17,6 +17,8 @@ public class LinkedListPractice {
 		llist.add("harpreet");
 		llist.set(0, "RAHUL");
 		llist.removeLast();
+		System.out.println("Peek: "+llist.peek());
+		System.out.println("Poll: "+llist.poll());
 		//System.out.println(llist);
 		llist.addLast("Harpreet");
 		//System.out.println(llist.getLast());

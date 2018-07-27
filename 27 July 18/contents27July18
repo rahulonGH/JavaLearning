@@ -1,0 +1,36 @@
+Enumeration
+============
+list of named constants
+part of legacy system, but obsolete for new code; however nit yet deprecated.
+
+methods
+---------------
+hasMoreElemnts()
+nextElement()
+
+
+Queue
+---------
+when we need to represent group of individual objects 'prior to processing' the Queues are preferred
+eg: to-do List, mailing list
+usually it follows FIFO, but we can change the priority based on some comparison.
+
+Mostly used implementation class of Queue is PriorityQueue,LinkedList,Dequeue
+
+boolean add(Object e) -- adds an element
+Object remove()  -- retrieve and remove the first element(head).
+Object poll()  -- retrieve and remove the first element(head) and return null if queue is empty.
+Object peek()  -- retrieve but not remove the head element and return null if queue is empty.
+Object element() -- retrieving but not removing.
+
+[3][2][1][][]
+tail	head
+
+Priority Queue
+==============
+Not in FIFO
+elements must be of comparable type
+String and All the wrapper classes are by default comparable
+
+Wildcard in generics.
+Comparable example with Priority queues.
