@@ -1,0 +1,33 @@
+Wildcards in Generics
+-----------------------
+(? is known as Wildcard in generic programing)
+wildcards represent UNKNOWN TYPE.
+we can't use wildcards while invoking generic methods and instantiating generic class.
+
+3 types of wildcard implementation
+--------------------------------------
+1. Upper Bound Wildcard  [it allows us to pass arguements of Upper Bound or its Subclass]
+========================
+A extends B
+<? extends TypeName>
+Student <? extends String>
+
+public static double doAddition(List<? extends Number> list){
+
+}
+ 
+2. Lower Bound WildCard [it allows us to pass arguments of lower Bound or its super class]
+==========================
+<? super TypeName>
+
+public static double doAddition(List<? super Integer> list){
+}
+
+3. Unbounded Wildcard [whenever we want the generics to be working with any type]
+======================
+<?> or <? extends Object>
+
+
+
+					
+					
