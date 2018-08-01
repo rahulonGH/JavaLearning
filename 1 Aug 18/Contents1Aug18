@@ -1,0 +1,36 @@
+<<Map>>
+===============
+Whenever we need a Key-Value pair kind of collection.
+
+interface Map<K,V>   ... K= Type of key     V= Type of value
+
+Map [i] - Maps unique Key-Value pairs
+Map.Entry [i] - inner clsss of Map [describe the elements of the Map] 
+NavigableMap [i] - Extends SortedMap to handle the retrieval of entries based on closest Match.
+SortedMap [i] - Extends Map and maintains ascending order.
+
+2 basic methods of Map
+get() and put()
+
+V get(Object k)  -- Returns the value to which the specified key is mapped, or null if this map contains no mapping for the key.
+V put(K k, V v) -- Maps the specified key to the specified value in this hashtable. Neither the key nor the value can be null. 
+
+entrySet() - returns a Set(Collection view of Map) that contains elements in the Map.
+keySet() - return a Set(Collection view of keys) that contains the keys in the map.
+values() - return a Set(Collection view of values) that contains the values in the map.
+
+HashTable [legacy class jdk 1.0]
+---------------------------------
+- unique elements
+- Synchronized
+- array of linked list [ref. hashing techniques]
+
+
+HT        						HM
+---------------------------------------------------
+synchronized					non-Syncronized
+jdk1.0							jdk 1.2
+slow							fast
+doen't allow null key-value		it allwos one null key and multiple null values
+unordered						unordered
+
