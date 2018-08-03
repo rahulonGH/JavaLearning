@@ -1,0 +1,12 @@
+LinkedHashMAp
+===================
+LinkedHashMap is implemented on doubly Linked list data structure
+ it extends HashMap hence contains all the properties o HashMap class and
+ it maintains the insertion order.
+ 
+TreeMap
+===================
+implementation of Map using Tree Data Structure
+unique elements
+can't have null key, but can have multiple values
+ascending order
