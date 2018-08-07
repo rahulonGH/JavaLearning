@@ -1,0 +1,27 @@
+Properties
+===========
+this is the implementation class of HashTable.
+ key = value
+ 
+recompilaion is not required for java  class if the information is changed in properties file.
+
+public void load(Reader r)
+public void load(InputStream i)
+public String getProperty(String key)
+public String setProperty(String key,String value)
+public void store(Writer w,String remarks)
+
+
+JDBC [Java database connectivity]
+==================================
+java API to connect and execute queries with the Database.
+JDBC uses jdbc drivers to connect with DB[any type].
+
+types of drivers
+====================
+1. JDBC-ODBC bridge driver [removed from java 8]
+2. Native-API driver [partially java]
+3. Network Protocol driver [Fully Java]
+4. Thin driver or Type-4 Driver [Fully java]  {most efficient}
+
+thin driver converts the JDBC calls directly into vendor specific DB calls 
