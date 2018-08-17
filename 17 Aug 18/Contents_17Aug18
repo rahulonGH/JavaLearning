@@ -1,0 +1,36 @@
+JDBC Drivers
+----------------
+1. JDBC-ODBC bridge driver [non-java] [removed in java 8]
+2. Native-API driver [Partially java]
+3. Network Protocol Driver [fully java]
+4. Thin driver [fully java]
+
+Connectivity
+-------------
+-- Registering driver class
+-- Creating connection
+-- Creating Statement
+-- Exexcuting the queries
+-- Closing Connection
+
+-->Registering driver class
+   	 Class class has a method forName() , which help to register driver.
+     public static void forName(String jdbcdriverClassName) throws ClassNotFoundException
+     
+     eg: Class.forName("oracle.jdbc.driver.OracleDriver");
+     
+-->getConnection() of DriverManager class
+	 public static Connection getConnection(String url) throws SQLException
+	 
+	 eg: Connection c = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","username","password");
+	 
+-->createStatement() of Connection interface.  -> the statement object will be responsible for executing the queries with db
+		eg: Statement stmt = c.createStatement();
+		
+--> Executing the statement/queries
+	executeQuery() of Statement interface--->returns the ResultSet that can be used to get all the records of a table.
+	
+-->Closing connection
+	close();
+	
+	c.close();
