@@ -3,6 +3,7 @@ package git.Learning;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -11,8 +12,12 @@ public class JDBCProgram {
 	public static void main(String[] args) {
 		
 		try {
-			Class.forName("oracle.jdbc.driver.OracleDriver"); //registration of driver  {if ojdbc14.jar file is not added, ClassNotFoundException will be thrown}
+			//Class.forName("oracle.jdbc.driver.OracleDriver"); //registration of driver  {if ojdbc14.jar file is not added, ClassNotFoundException will be thrown}
+			oracle.jdbc.driver.OracleDriver driver = new oracle.jdbc.driver.OracleDriver();
+			DriverManager.registerDriver(driver);
+			System.out.println(DriverManager.getLoginTimeout());
 			Connection con = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:xe","system","wlsysadmin"); //Creating Connection
+			System.out.println(con.getAutoCommit());
 			Statement stmt = con.createStatement(); //creating statement
 			ResultSet rs = stmt.executeQuery("SELECT * FROM EMP"); //executing the query
 			while(rs.next()){
@@ -26,9 +31,7 @@ public class JDBCProgram {
 			}
 			con.close();//closing the connection
 			
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		} catch (SQLException e) {
+		}  catch (SQLException e) {
 			e.printStackTrace();
 		}
 		

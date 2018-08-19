@@ -1,0 +1,64 @@
+DriverManager class
+--------------------
+provides basic services for managing a set of JDBC Drivers.
+interface b/w user & drivers
+
+public static Connection getConnection(String url,String uname, String pass)
+
+
+Connection Interface
+----------------------
+creating connecetion/session b/w Application and DB.
+factory interface for creating Statement,PreparedStatement & DatabaseMetaData 
+i.e the object ref of Connection interface can be used to get the object of Statement and PreparedStateent.
+
+Connection interface provides many mothods for Transaction Mangaement. eg: commit(),rollback()
+By default connection commits the changes after executing queries.
+
+public Statement createStatement() 
+public PreparedStatement prepareStatement() 
+public void setAutoCommit(boolean flag)
+public boolean getAutoCommit()
+public void commit()
+public void rollback()
+public void close();
+
+Statement Interface
+---------------------
+provide methods to execute queries with DB
+factory of ResultSet creating methods
+
+public ResultSet executeQuery(String sql) 	/// SELECT
+public int executeUpdate(String sql)  		/// Create/Drop/Update/Delete/Insert   /returns number of rows affected
+public int[] executeBatch()
+public boolean execute(String sql) // returns true if ResultSet Object can be retrieved 
+
+PreparedStatement
+--------------------
+Sub interface of Statement interface
+it is used to execute Parameterized queries
+PreparedStatement queries is compiled only once [it improves performance]
+
+String sql = "insert into emp values(1002,'RAJU',2233)";
+String paramsql = "insert into emp values(?,?,?)";
+
+public PreparedStatement prepareStatement(String sqlQuery)
+public void setInt(int coulmnIdex,int value)
+public void setString(int coulmnIndex,String value)
+public void setFloat(int coulmnIndex,float value)
+public void setDouble(int coulmnIndex,double value)
+
+ResultSet Interface
+----------------------
+cursor pointing to a row of table [by default it points to first row and it moves in forward direction]
+we can change movement of cursor by providing TYPE_SCROLL_INSENSITIVE or TYPE_SCROLL_SENSITIVE
+
+public boolean next()
+public boolean previous()
+public boolean first()
+public boolean last()
+public int getInt(int coulmnIndex)
+public int getInt(String coulnName)
+public String getString(int coulmnIndex)
+public String getString(String coulnName)
+
