@@ -41,7 +41,7 @@ public class HashTableExample {
 		for(String k : keys){
 			System.out.println(ht.get(k));
 		}
-		System.out.println("------------------");
+		System.out.println("-------------------");
 		for(Map.Entry<String,String> me: ht.entrySet()){
 			System.out.println(me.getKey() + " # "+me.getValue());
 		}

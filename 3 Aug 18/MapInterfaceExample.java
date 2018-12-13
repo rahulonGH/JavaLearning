@@ -19,6 +19,7 @@ public class MapInterfaceExample {
 		m.put(1004, ib4);
 		//System.out.println(m);
 		
+		
 		for(Map.Entry<Integer,InvoiceBean> e : m.entrySet()){
 			int key = e.getKey();
 			InvoiceBean ib = e.getValue();
